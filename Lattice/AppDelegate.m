@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "User.h"
+#import "MCManager.h"
 #import "SetupUserViewController.h"
 
 @interface AppDelegate ()
@@ -17,7 +19,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    // Override point for customization after application launch.
+    
+    
+//    NSString *username = (arc4random() %2 == 0) ? @"Xida" : @"Elliot";
+//    User *user = [[User alloc]initWithUsername:username];
+//    NSData *encodedUser = [NSKeyedArchiver archivedDataWithRootObject:user];
+//    [[NSUserDefaults standardUserDefaults] setObject:encodedUser forKey:@"user"];
+//    
+//    MCManager *manager = [[MCManager alloc] init];
+//    [manager setupPeerAndSessionWithDisplayName:username];
+//    [manager setupMCBrowser];
+//    [manager advertiseSelf:YES];
+    
     // Grab reference to storyboard
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
@@ -28,7 +42,6 @@
         [self.window makeKeyAndVisible];
         self.window.rootViewController = setupViewController;
     }
-    
     
     return YES;
 }

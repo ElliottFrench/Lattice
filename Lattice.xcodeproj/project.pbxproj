@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31A750F6C520B121F051BFA0 /* libPods-LatticeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE30EA99BB0A9B97B2B9C71A /* libPods-LatticeTests.a */; };
 		656958B11A2111BC00BF47D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958B01A2111BC00BF47D5 /* main.m */; };
 		656958B41A2111BC00BF47D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958B31A2111BC00BF47D5 /* AppDelegate.m */; };
 		656958BA1A2111BC00BF47D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656958B81A2111BC00BF47D5 /* Main.storyboard */; };
 		656958BC1A2111BC00BF47D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656958BB1A2111BC00BF47D5 /* Images.xcassets */; };
 		656958BF1A2111BC00BF47D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656958BD1A2111BC00BF47D5 /* LaunchScreen.xib */; };
-		656958CB1A2111BC00BF47D5 /* LatticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958CA1A2111BC00BF47D5 /* LatticeTests.m */; };
+		656958CB1A2111BC00BF47D5 /* ChannelViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958CA1A2111BC00BF47D5 /* ChannelViewControllerSpec.m */; };
 		656958D51A21121700BF47D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656958D41A21121700BF47D5 /* CoreData.framework */; };
 		656958D71A21122400BF47D5 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656958D61A21122400BF47D5 /* MultipeerConnectivity.framework */; };
 		656958E01A21137100BF47D5 /* PublicChannelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958DF1A21137100BF47D5 /* PublicChannelsTableViewController.m */; };
 		656958E31A21165600BF47D5 /* MCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958E21A21165600BF47D5 /* MCManager.m */; };
-		656958E81A21360600BF47D5 /* ChannelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958E71A21360600BF47D5 /* ChannelTableViewController.m */; };
+		656958E81A21360600BF47D5 /* ChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958E71A21360600BF47D5 /* ChannelViewController.m */; };
 		656958EE1A2136E300BF47D5 /* SetupUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958ED1A2136E300BF47D5 /* SetupUserViewController.m */; };
-		656958F11A236D4400BF47D5 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958F01A236D4400BF47D5 /* ChannelTableViewCell.m */; };
-		656958F31A236D7E00BF47D5 /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656958F21A236D7E00BF47D5 /* ChannelTableViewCell.xib */; };
+		EA09C1391A24006100B39B21 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA09C1371A24006100B39B21 /* ChannelTableViewCell.m */; };
+		EA09C13A1A24006100B39B21 /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA09C1381A24006100B39B21 /* ChannelTableViewCell.xib */; };
+		EAEBE8F21A226FEB00745070 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBE8F11A226FEB00745070 /* Message.m */; };
+		EAEBE8F51A22708500745070 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBE8F41A22708500745070 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		394ED8425D507057C21D5081 /* Pods-LatticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LatticeTests/Pods-LatticeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C2947BAA8830B3A421A715C /* Pods-LatticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LatticeTests/Pods-LatticeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		656958AB1A2111BC00BF47D5 /* Lattice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lattice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656958AF1A2111BC00BF47D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656958B01A2111BC00BF47D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,20 +49,25 @@
 		656958BE1A2111BC00BF47D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		656958C41A2111BC00BF47D5 /* LatticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LatticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656958C91A2111BC00BF47D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		656958CA1A2111BC00BF47D5 /* LatticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LatticeTests.m; sourceTree = "<group>"; };
+		656958CA1A2111BC00BF47D5 /* ChannelViewControllerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelViewControllerSpec.m; sourceTree = "<group>"; };
 		656958D41A21121700BF47D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		656958D61A21122400BF47D5 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		656958DE1A21137100BF47D5 /* PublicChannelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicChannelsTableViewController.h; sourceTree = "<group>"; };
 		656958DF1A21137100BF47D5 /* PublicChannelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicChannelsTableViewController.m; sourceTree = "<group>"; };
 		656958E11A21165600BF47D5 /* MCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCManager.h; sourceTree = "<group>"; };
 		656958E21A21165600BF47D5 /* MCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCManager.m; sourceTree = "<group>"; };
-		656958E61A21360600BF47D5 /* ChannelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewController.h; sourceTree = "<group>"; };
-		656958E71A21360600BF47D5 /* ChannelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewController.m; sourceTree = "<group>"; };
+		656958E61A21360600BF47D5 /* ChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelViewController.h; sourceTree = "<group>"; };
+		656958E71A21360600BF47D5 /* ChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
 		656958EC1A2136E300BF47D5 /* SetupUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupUserViewController.h; sourceTree = "<group>"; };
 		656958ED1A2136E300BF47D5 /* SetupUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupUserViewController.m; sourceTree = "<group>"; };
-		656958EF1A236D4400BF47D5 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
-		656958F01A236D4400BF47D5 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
-		656958F21A236D7E00BF47D5 /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
+		EA09C1361A24006100B39B21 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
+		EA09C1371A24006100B39B21 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
+		EA09C1381A24006100B39B21 /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
+		EAEBE8F01A226FEB00745070 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		EAEBE8F11A226FEB00745070 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		EAEBE8F31A22708500745070 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		EAEBE8F41A22708500745070 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FE30EA99BB0A9B97B2B9C71A /* libPods-LatticeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LatticeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +84,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A750F6C520B121F051BFA0 /* libPods-LatticeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6411407E677C5E7127CBA0FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C2947BAA8830B3A421A715C /* Pods-LatticeTests.debug.xcconfig */,
+				394ED8425D507057C21D5081 /* Pods-LatticeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		656958A21A2111BC00BF47D5 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +108,8 @@
 				656958D61A21122400BF47D5 /* MultipeerConnectivity.framework */,
 				656958C71A2111BC00BF47D5 /* LatticeTests */,
 				656958AC1A2111BC00BF47D5 /* Products */,
+				6411407E677C5E7127CBA0FA /* Pods */,
+				94D9A85F27BA19824121F126 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +148,7 @@
 		656958C71A2111BC00BF47D5 /* LatticeTests */ = {
 			isa = PBXGroup;
 			children = (
-				656958CA1A2111BC00BF47D5 /* LatticeTests.m */,
+				656958CA1A2111BC00BF47D5 /* ChannelViewControllerSpec.m */,
 				656958C81A2111BC00BF47D5 /* Supporting Files */,
 			);
 			path = LatticeTests;
@@ -147,8 +169,8 @@
 				656958ED1A2136E300BF47D5 /* SetupUserViewController.m */,
 				656958DE1A21137100BF47D5 /* PublicChannelsTableViewController.h */,
 				656958DF1A21137100BF47D5 /* PublicChannelsTableViewController.m */,
-				656958E61A21360600BF47D5 /* ChannelTableViewController.h */,
-				656958E71A21360600BF47D5 /* ChannelTableViewController.m */,
+				656958E61A21360600BF47D5 /* ChannelViewController.h */,
+				656958E71A21360600BF47D5 /* ChannelViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +178,10 @@
 		656958D91A21123700BF47D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EAEBE8F01A226FEB00745070 /* Message.h */,
+				EAEBE8F11A226FEB00745070 /* Message.m */,
+				EAEBE8F31A22708500745070 /* User.h */,
+				EAEBE8F41A22708500745070 /* User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -163,9 +189,9 @@
 		656958DA1A21123C00BF47D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				656958EF1A236D4400BF47D5 /* ChannelTableViewCell.h */,
-				656958F01A236D4400BF47D5 /* ChannelTableViewCell.m */,
-				656958F21A236D7E00BF47D5 /* ChannelTableViewCell.xib */,
+				EA09C1361A24006100B39B21 /* ChannelTableViewCell.h */,
+				EA09C1371A24006100B39B21 /* ChannelTableViewCell.m */,
+				EA09C1381A24006100B39B21 /* ChannelTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -198,6 +224,14 @@
 			name = MultipeerManager;
 			sourceTree = "<group>";
 		};
+		94D9A85F27BA19824121F126 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE30EA99BB0A9B97B2B9C71A /* libPods-LatticeTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 656958D11A2111BC00BF47D5 /* Build configuration list for PBXNativeTarget "LatticeTests" */;
 			buildPhases = (
+				2AD9A8CB736A00DAC5EBA8AA /* Check Pods Manifest.lock */,
 				656958C01A2111BC00BF47D5 /* Sources */,
 				656958C11A2111BC00BF47D5 /* Frameworks */,
 				656958C21A2111BC00BF47D5 /* Resources */,
+				923F2D0BFC4B9E452D1E10DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656958BA1A2111BC00BF47D5 /* Main.storyboard in Resources */,
-				656958F31A236D7E00BF47D5 /* ChannelTableViewCell.xib in Resources */,
+				EA09C13A1A24006100B39B21 /* ChannelTableViewCell.xib in Resources */,
 				656958BF1A2111BC00BF47D5 /* LaunchScreen.xib in Resources */,
 				656958BC1A2111BC00BF47D5 /* Images.xcassets in Resources */,
 			);
@@ -294,18 +330,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AD9A8CB736A00DAC5EBA8AA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		923F2D0BFC4B9E452D1E10DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LatticeTests/Pods-LatticeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		656958A71A2111BC00BF47D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEBE8F51A22708500745070 /* User.m in Sources */,
 				656958B41A2111BC00BF47D5 /* AppDelegate.m in Sources */,
-				656958E81A21360600BF47D5 /* ChannelTableViewController.m in Sources */,
+				656958E81A21360600BF47D5 /* ChannelViewController.m in Sources */,
 				656958E31A21165600BF47D5 /* MCManager.m in Sources */,
+				EA09C1391A24006100B39B21 /* ChannelTableViewCell.m in Sources */,
+				EAEBE8F21A226FEB00745070 /* Message.m in Sources */,
 				656958EE1A2136E300BF47D5 /* SetupUserViewController.m in Sources */,
 				656958E01A21137100BF47D5 /* PublicChannelsTableViewController.m in Sources */,
 				656958B11A2111BC00BF47D5 /* main.m in Sources */,
-				656958F11A236D4400BF47D5 /* ChannelTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656958CB1A2111BC00BF47D5 /* LatticeTests.m in Sources */,
+				656958CB1A2111BC00BF47D5 /* ChannelViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +516,7 @@
 		};
 		656958D21A2111BC00BF47D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2947BAA8830B3A421A715C /* Pods-LatticeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -464,6 +536,7 @@
 		};
 		656958D31A2111BC00BF47D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394ED8425D507057C21D5081 /* Pods-LatticeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
