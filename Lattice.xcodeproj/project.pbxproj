@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31A750F6C520B121F051BFA0 /* libPods-LatticeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE30EA99BB0A9B97B2B9C71A /* libPods-LatticeTests.a */; };
+		33B62D070AF62D0D97A66EF9 /* libPods-Lattice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9C3EFD590106F594CDF999 /* libPods-Lattice.a */; };
 		656958B11A2111BC00BF47D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958B01A2111BC00BF47D5 /* main.m */; };
 		656958B41A2111BC00BF47D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958B31A2111BC00BF47D5 /* AppDelegate.m */; };
 		656958BA1A2111BC00BF47D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656958B81A2111BC00BF47D5 /* Main.storyboard */; };
@@ -22,6 +23,10 @@
 		656958EE1A2136E300BF47D5 /* SetupUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656958ED1A2136E300BF47D5 /* SetupUserViewController.m */; };
 		EA09C1391A24006100B39B21 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA09C1371A24006100B39B21 /* ChannelTableViewCell.m */; };
 		EA09C13A1A24006100B39B21 /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA09C1381A24006100B39B21 /* ChannelTableViewCell.xib */; };
+		EA9C2F4C1A2CED5100438648 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F4B1A2CED5100438648 /* MessagesViewController.m */; };
+		EA9C2F4F1A2CED9100438648 /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F4E1A2CED9100438648 /* NSUserDefaults+DemoSettings.m */; };
+		EA9C2F521A2CEE3300438648 /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F511A2CEE3300438648 /* DemoModelData.m */; };
+		EA9C2F551A2D4C3B00438648 /* XZMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F541A2D4C3B00438648 /* XZMessage.m */; };
 		EAEBE8F21A226FEB00745070 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBE8F11A226FEB00745070 /* Message.m */; };
 		EAEBE8F51A22708500745070 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBE8F41A22708500745070 /* User.m */; };
 /* End PBXBuildFile section */
@@ -37,8 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33CFE92AE6704505E85CDE0A /* Pods-Lattice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lattice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lattice/Pods-Lattice.debug.xcconfig"; sourceTree = "<group>"; };
 		394ED8425D507057C21D5081 /* Pods-LatticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LatticeTests/Pods-LatticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C2947BAA8830B3A421A715C /* Pods-LatticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LatticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LatticeTests/Pods-LatticeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F4C7A01FD129957FEFB9C15 /* Pods-Lattice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lattice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lattice/Pods-Lattice.release.xcconfig"; sourceTree = "<group>"; };
 		656958AB1A2111BC00BF47D5 /* Lattice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lattice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656958AF1A2111BC00BF47D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656958B01A2111BC00BF47D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,9 +67,18 @@
 		656958E71A21360600BF47D5 /* ChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
 		656958EC1A2136E300BF47D5 /* SetupUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupUserViewController.h; sourceTree = "<group>"; };
 		656958ED1A2136E300BF47D5 /* SetupUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupUserViewController.m; sourceTree = "<group>"; };
+		CA9C3EFD590106F594CDF999 /* libPods-Lattice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lattice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA09C1361A24006100B39B21 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
 		EA09C1371A24006100B39B21 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
 		EA09C1381A24006100B39B21 /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
+		EA9C2F4A1A2CED5100438648 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		EA9C2F4B1A2CED5100438648 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		EA9C2F4D1A2CED9100438648 /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
+		EA9C2F4E1A2CED9100438648 /* NSUserDefaults+DemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DemoSettings.m"; sourceTree = "<group>"; };
+		EA9C2F501A2CEE3300438648 /* DemoModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModelData.h; sourceTree = "<group>"; };
+		EA9C2F511A2CEE3300438648 /* DemoModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModelData.m; sourceTree = "<group>"; };
+		EA9C2F531A2D4C3B00438648 /* XZMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMessage.h; sourceTree = "<group>"; };
+		EA9C2F541A2D4C3B00438648 /* XZMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMessage.m; sourceTree = "<group>"; };
 		EAEBE8F01A226FEB00745070 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		EAEBE8F11A226FEB00745070 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		EAEBE8F31A22708500745070 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -77,6 +93,7 @@
 			files = (
 				656958D71A21122400BF47D5 /* MultipeerConnectivity.framework in Frameworks */,
 				656958D51A21121700BF47D5 /* CoreData.framework in Frameworks */,
+				33B62D070AF62D0D97A66EF9 /* libPods-Lattice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +113,8 @@
 			children = (
 				4C2947BAA8830B3A421A715C /* Pods-LatticeTests.debug.xcconfig */,
 				394ED8425D507057C21D5081 /* Pods-LatticeTests.release.xcconfig */,
+				33CFE92AE6704505E85CDE0A /* Pods-Lattice.debug.xcconfig */,
+				5F4C7A01FD129957FEFB9C15 /* Pods-Lattice.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -141,6 +160,8 @@
 			children = (
 				656958AF1A2111BC00BF47D5 /* Info.plist */,
 				656958B01A2111BC00BF47D5 /* main.m */,
+				EA9C2F4D1A2CED9100438648 /* NSUserDefaults+DemoSettings.h */,
+				EA9C2F4E1A2CED9100438648 /* NSUserDefaults+DemoSettings.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,6 +192,8 @@
 				656958DF1A21137100BF47D5 /* PublicChannelsTableViewController.m */,
 				656958E61A21360600BF47D5 /* ChannelViewController.h */,
 				656958E71A21360600BF47D5 /* ChannelViewController.m */,
+				EA9C2F4A1A2CED5100438648 /* MessagesViewController.h */,
+				EA9C2F4B1A2CED5100438648 /* MessagesViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -180,8 +203,12 @@
 			children = (
 				EAEBE8F01A226FEB00745070 /* Message.h */,
 				EAEBE8F11A226FEB00745070 /* Message.m */,
+				EA9C2F531A2D4C3B00438648 /* XZMessage.h */,
+				EA9C2F541A2D4C3B00438648 /* XZMessage.m */,
 				EAEBE8F31A22708500745070 /* User.h */,
 				EAEBE8F41A22708500745070 /* User.m */,
+				EA9C2F501A2CEE3300438648 /* DemoModelData.h */,
+				EA9C2F511A2CEE3300438648 /* DemoModelData.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -228,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				FE30EA99BB0A9B97B2B9C71A /* libPods-LatticeTests.a */,
+				CA9C3EFD590106F594CDF999 /* libPods-Lattice.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -239,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 656958CE1A2111BC00BF47D5 /* Build configuration list for PBXNativeTarget "Lattice" */;
 			buildPhases = (
+				AE7174498C788D0757EE49AE /* Check Pods Manifest.lock */,
 				656958A71A2111BC00BF47D5 /* Sources */,
 				656958A81A2111BC00BF47D5 /* Frameworks */,
 				656958A91A2111BC00BF47D5 /* Resources */,
+				41B577B63B83AE5FF267F8C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,6 +376,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		41B577B63B83AE5FF267F8C8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lattice/Pods-Lattice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		923F2D0BFC4B9E452D1E10DE /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +406,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LatticeTests/Pods-LatticeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AE7174498C788D0757EE49AE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -373,9 +433,13 @@
 				656958E81A21360600BF47D5 /* ChannelViewController.m in Sources */,
 				656958E31A21165600BF47D5 /* MCManager.m in Sources */,
 				EA09C1391A24006100B39B21 /* ChannelTableViewCell.m in Sources */,
+				EA9C2F551A2D4C3B00438648 /* XZMessage.m in Sources */,
 				EAEBE8F21A226FEB00745070 /* Message.m in Sources */,
+				EA9C2F4C1A2CED5100438648 /* MessagesViewController.m in Sources */,
 				656958EE1A2136E300BF47D5 /* SetupUserViewController.m in Sources */,
 				656958E01A21137100BF47D5 /* PublicChannelsTableViewController.m in Sources */,
+				EA9C2F4F1A2CED9100438648 /* NSUserDefaults+DemoSettings.m in Sources */,
+				EA9C2F521A2CEE3300438648 /* DemoModelData.m in Sources */,
 				656958B11A2111BC00BF47D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,9 +560,11 @@
 		};
 		656958CF1A2111BC00BF47D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33CFE92AE6704505E85CDE0A /* Pods-Lattice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lattice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -506,9 +572,11 @@
 		};
 		656958D01A2111BC00BF47D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4C7A01FD129957FEFB9C15 /* Pods-Lattice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lattice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

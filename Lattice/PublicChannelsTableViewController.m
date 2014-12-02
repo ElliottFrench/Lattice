@@ -9,6 +9,7 @@
 #import "PublicChannelsTableViewController.h"
 #import "ChannelTableViewCell.h"
 #import "ChannelViewController.h"
+#import "MessagesViewController.h"
 
 @interface PublicChannelsTableViewController ()
 
@@ -22,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Channels";
     
     self.channelTitles = @[@"Communication", @"Transportation", @"Healthcare", @"Food and Water", @"Shelter", @"Power", @"Sanitation", @"Other"];
     // Set images array for cell images
@@ -39,7 +41,13 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"ChannelTableViewCell"
                                                bundle:nil] forCellReuseIdentifier:@"ChannelTableViewCell"];
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
-    self.tableView.backgroundColor = [UIColor grayColor];
+    self.tableView.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -79,10 +87,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-        
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     //Create a Channel View Controller and pass in information to it.
-    ChannelViewController *channelVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ChannelViewController"];
+    MessagesViewController *channelVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MessagesViewController"];
+    channelVC.channelName = self.channelTitles[indexPath.row];
     [self.navigationController pushViewController:channelVC animated:YES];
+    
     
 }
 
